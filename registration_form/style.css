@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #61c174, #7051e0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 30px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  width: 150px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.gender-row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.gender-row label {
+  width: 150px;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 5px;
+}
+input:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 0 0.2rem rgba(106, 17, 203, 0.2);
+}
+.gender-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gender-options label {
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cancel {
+  background: white;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  transition: 0.3s;
+}
+
+.cancel:hover {
+  background: #dc3545;
+  color: white;
+}
+
+.register {
+  background: linear-gradient(to right, #0ecd34, #310cb5);
+  color: white;
+  transition: 0.3s;
+}
+.register:hover{ 
+  background: linear-gradient(to right, #310cb5, #0ecd34);
+  color: white;
+}
+
+.register:hover {
+  opacity: 0.9;
+}
